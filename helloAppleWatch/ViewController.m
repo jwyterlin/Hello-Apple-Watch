@@ -34,7 +34,7 @@
 
 -(IBAction)okButtonPressed:(id)sender {
     
-    self.messageLabel.text = @"Irmaaaaaaaaaaaooooo";
+    self.messageLabel.text = @"Message changed";
     
 }
 
