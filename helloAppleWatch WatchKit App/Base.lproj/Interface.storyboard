@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7525" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7525" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9dI-nr-IoI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7516"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
-                    <color key="backgroundColor" red="1" green="0.59096721243818728" blue="0.46853212818319789" alpha="1" colorSpace="calibratedRGB"/>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -25,20 +16,100 @@
                         </label>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="10A-o4-kKM"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="219" y="642"/>
+            <point key="canvasLocation" x="188" y="572"/>
+        </scene>
+        <!--Page One Interface Controller-->
+        <scene sceneID="R11-Kx-bho">
+            <objects>
+                <controller id="9dI-nr-IoI" customClass="PageOneInterfaceController">
+                    <items>
+                        <label alignment="left" text="Label" id="Gbg-rr-BFK">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <variation key="device=watch38mm" text="Amanda"/>
+                        </label>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="Gbg-rr-BFK"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="Gbg-rr-BFK"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <segue destination="LFS-cn-kgf" kind="relationship" relationship="nextPage" id="fHy-bW-Ef2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="286" y="896"/>
+        </scene>
+        <!--Page Two Interface Controller-->
+        <scene sceneID="wAv-u0-Eqn">
+            <objects>
+                <controller id="LFS-cn-kgf" customClass="PageTwoInterfaceController">
+                    <items>
+                        <label alignment="left" text="Label" id="bgx-hf-HtL">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <variation key="device=watch38mm" text="Jhonathan"/>
+                        </label>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="bgx-hf-HtL"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="bgx-hf-HtL"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <segue destination="Qo5-QP-bux" kind="relationship" relationship="nextPage" id="WCc-vu-R7p"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="510" y="896"/>
+        </scene>
+        <!--Page Three Interface Controller-->
+        <scene sceneID="uZA-tR-OQ7">
+            <objects>
+                <controller id="Qo5-QP-bux" customClass="PageThreeInterfaceController">
+                    <items>
+                        <label alignment="left" text="Label" id="P06-B6-n54">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <variation key="device=watch38mm" text="Maria Júlia"/>
+                        </label>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="P06-B6-n54"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="P06-B6-n54"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="740" y="896"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="468" y="563"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.051687603372640445" green="0.36381624754677711" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -1,36 +1,23 @@
 //
-//  InterfaceController.m
-//  helloAppleWatch WatchKit Extension
+//  PageOneInterfaceController.m
+//  helloAppleWatch
 //
-//  Created by Jhonathan Wyterlin on 04/04/15.
+//  Created by Jhonathan Wyterlin on 08/04/15.
 //  Copyright (c) 2015 Jhonathan Wyterlin. All rights reserved.
 //
 
-#import "InterfaceController.h"
+#import "PageOneInterfaceController.h"
 
-
-@interface InterfaceController()
+@interface PageOneInterfaceController ()
 
 @end
 
-
-@implementation InterfaceController
-
-- (instancetype)init {
-    
-    self = [super init];
-    
-    if ( self ) {
-    }
-    
-    return self;
-    
-}
+@implementation PageOneInterfaceController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
+    
     // Configure interface objects here.
-    [WKInterfaceController reloadRootControllersWithNames:@[] contexts:@[]];
 }
 
 - (void)willActivate {

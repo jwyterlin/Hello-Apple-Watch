@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B186D3D1AD5DC6400B39F8C /* PageOneInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3C1AD5DC6400B39F8C /* PageOneInterfaceController.m */; };
+		7B186D401AD5DC8700B39F8C /* PageTwoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */; };
+		7B186D431AD5DC9A00B39F8C /* PageThreeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D421AD5DC9A00B39F8C /* PageThreeInterfaceController.m */; };
 		7B2CC4AA1AD025EA00FF8926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC4A91AD025EA00FF8926 /* main.m */; };
 		7B2CC4AD1AD025EA00FF8926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC4AC1AD025EA00FF8926 /* AppDelegate.m */; };
 		7B2CC4B01AD025EA00FF8926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC4AF1AD025EA00FF8926 /* ViewController.m */; };
@@ -62,6 +65,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B186D3B1AD5DC6400B39F8C /* PageOneInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneInterfaceController.h; sourceTree = "<group>"; };
+		7B186D3C1AD5DC6400B39F8C /* PageOneInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneInterfaceController.m; sourceTree = "<group>"; };
+		7B186D3E1AD5DC8700B39F8C /* PageTwoInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoInterfaceController.h; sourceTree = "<group>"; };
+		7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoInterfaceController.m; sourceTree = "<group>"; };
+		7B186D411AD5DC9A00B39F8C /* PageThreeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageThreeInterfaceController.h; sourceTree = "<group>"; };
+		7B186D421AD5DC9A00B39F8C /* PageThreeInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageThreeInterfaceController.m; sourceTree = "<group>"; };
 		7B2CC4A41AD025EA00FF8926 /* helloAppleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloAppleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2CC4A81AD025EA00FF8926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B2CC4A91AD025EA00FF8926 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +123,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B186D441AD5DEF200B39F8C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7B2CC4D91AD02AFD00FF8926 /* InterfaceController.h */,
+				7B2CC4DA1AD02AFD00FF8926 /* InterfaceController.m */,
+				7B186D3B1AD5DC6400B39F8C /* PageOneInterfaceController.h */,
+				7B186D3C1AD5DC6400B39F8C /* PageOneInterfaceController.m */,
+				7B186D3E1AD5DC8700B39F8C /* PageTwoInterfaceController.h */,
+				7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */,
+				7B186D411AD5DC9A00B39F8C /* PageThreeInterfaceController.h */,
+				7B186D421AD5DC9A00B39F8C /* PageThreeInterfaceController.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		7B186D451AD5DF1A00B39F8C /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7B2CC4DC1AD02AFD00FF8926 /* NotificationController.h */,
+				7B2CC4DD1AD02AFD00FF8926 /* NotificationController.m */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
 		7B2CC49B1AD025EA00FF8926 = {
 			isa = PBXGroup;
 			children = (
@@ -180,10 +213,8 @@
 		7B2CC4D51AD02AFD00FF8926 /* helloAppleWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7B2CC4D91AD02AFD00FF8926 /* InterfaceController.h */,
-				7B2CC4DA1AD02AFD00FF8926 /* InterfaceController.m */,
-				7B2CC4DC1AD02AFD00FF8926 /* NotificationController.h */,
-				7B2CC4DD1AD02AFD00FF8926 /* NotificationController.m */,
+				7B186D451AD5DF1A00B39F8C /* Notification */,
+				7B186D441AD5DEF200B39F8C /* Interface */,
 				7B2CC4DF1AD02AFD00FF8926 /* Images.xcassets */,
 				7B2CC4D61AD02AFD00FF8926 /* Supporting Files */,
 			);
@@ -396,8 +427,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B186D431AD5DC9A00B39F8C /* PageThreeInterfaceController.m in Sources */,
 				7B2CC4DE1AD02AFD00FF8926 /* NotificationController.m in Sources */,
 				7B2CC4DB1AD02AFD00FF8926 /* InterfaceController.m in Sources */,
+				7B186D3D1AD5DC6400B39F8C /* PageOneInterfaceController.m in Sources */,
+				7B186D401AD5DC8700B39F8C /* PageTwoInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +692,7 @@
 				7B2CC4C91AD025EA00FF8926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B2CC4CA1AD025EA00FF8926 /* Build configuration list for PBXNativeTarget "helloAppleWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -666,6 +701,7 @@
 				7B2CC4CC1AD025EA00FF8926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B2CC4F21AD02AFE00FF8926 /* Build configuration list for PBXNativeTarget "helloAppleWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -674,6 +710,7 @@
 				7B2CC4F41AD02AFE00FF8926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B2CC4F51AD02AFE00FF8926 /* Build configuration list for PBXNativeTarget "helloAppleWatch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -682,6 +719,7 @@
 				7B2CC4F71AD02AFE00FF8926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
