@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7525" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9dI-nr-IoI">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9dI-nr-IoI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7516"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="188" y="572"/>
         </scene>
-        <!--Page One Interface Controller-->
+        <!--PageOne-->
         <scene sceneID="R11-Kx-bho">
             <objects>
-                <controller id="9dI-nr-IoI" customClass="PageOneInterfaceController">
+                <controller identifier="PageOne" id="9dI-nr-IoI" customClass="PageOneInterfaceController">
                     <items>
                         <label alignment="left" text="Label" id="Gbg-rr-BFK">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="286" y="896"/>
         </scene>
-        <!--Page Two Interface Controller-->
+        <!--PageTwo-->
         <scene sceneID="wAv-u0-Eqn">
             <objects>
-                <controller id="LFS-cn-kgf" customClass="PageTwoInterfaceController">
+                <controller identifier="PageTwo" id="LFS-cn-kgf" customClass="PageTwoInterfaceController">
                     <items>
                         <label alignment="left" text="Label" id="bgx-hf-HtL">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="510" y="896"/>
         </scene>
-        <!--Page Three Interface Controller-->
+        <!--PageThree-->
         <scene sceneID="uZA-tR-OQ7">
             <objects>
-                <controller id="Qo5-QP-bux" customClass="PageThreeInterfaceController">
+                <controller identifier="PageThree" id="Qo5-QP-bux" customClass="PageThreeInterfaceController">
                     <items>
                         <label alignment="left" text="Label" id="P06-B6-n54">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
