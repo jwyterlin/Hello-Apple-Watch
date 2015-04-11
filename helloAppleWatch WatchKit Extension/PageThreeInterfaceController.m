@@ -18,6 +18,7 @@
     [super awakeWithContext:context];
     
     // Configure interface objects here.
+    [self setTitle:@"Names #03"];
 }
 
 - (void)willActivate {
