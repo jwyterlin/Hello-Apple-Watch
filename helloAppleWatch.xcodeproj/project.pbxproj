@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B186D3D1AD5DC6400B39F8C /* PageOneInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3C1AD5DC6400B39F8C /* PageOneInterfaceController.m */; };
+		7B186D3D1AD5DC6400B39F8C /* HomeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3C1AD5DC6400B39F8C /* HomeInterfaceController.m */; };
 		7B186D401AD5DC8700B39F8C /* PageTwoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */; };
 		7B186D431AD5DC9A00B39F8C /* PageThreeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D421AD5DC9A00B39F8C /* PageThreeInterfaceController.m */; };
 		7B2CC4AA1AD025EA00FF8926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC4A91AD025EA00FF8926 /* main.m */; };
@@ -24,6 +24,8 @@
 		7B2CC4EC1AD02AFD00FF8926 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CC4EA1AD02AFD00FF8926 /* Interface.storyboard */; };
 		7B2CC4EE1AD02AFD00FF8926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CC4ED1AD02AFD00FF8926 /* Images.xcassets */; };
 		7B2CC4F11AD02AFD00FF8926 /* helloAppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B2CC4D41AD02AFD00FF8926 /* helloAppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7BA636D11AD971DC005D57C1 /* CategoryRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA636D01AD971DC005D57C1 /* CategoryRowController.m */; };
+		7BA636D41AD97DED005D57C1 /* PageOneInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA636D31AD97DED005D57C1 /* PageOneInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7B186D3B1AD5DC6400B39F8C /* PageOneInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneInterfaceController.h; sourceTree = "<group>"; };
-		7B186D3C1AD5DC6400B39F8C /* PageOneInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneInterfaceController.m; sourceTree = "<group>"; };
+		7B186D3B1AD5DC6400B39F8C /* HomeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInterfaceController.h; sourceTree = "<group>"; };
+		7B186D3C1AD5DC6400B39F8C /* HomeInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInterfaceController.m; sourceTree = "<group>"; };
 		7B186D3E1AD5DC8700B39F8C /* PageTwoInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoInterfaceController.h; sourceTree = "<group>"; };
 		7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoInterfaceController.m; sourceTree = "<group>"; };
 		7B186D411AD5DC9A00B39F8C /* PageThreeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageThreeInterfaceController.h; sourceTree = "<group>"; };
@@ -96,6 +98,10 @@
 		7B2CC4E91AD02AFD00FF8926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B2CC4EB1AD02AFD00FF8926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7B2CC4ED1AD02AFD00FF8926 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BA636CF1AD971DC005D57C1 /* CategoryRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryRowController.h; sourceTree = "<group>"; };
+		7BA636D01AD971DC005D57C1 /* CategoryRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryRowController.m; sourceTree = "<group>"; };
+		7BA636D21AD97DED005D57C1 /* PageOneInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneInterfaceController.h; sourceTree = "<group>"; };
+		7BA636D31AD97DED005D57C1 /* PageOneInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,14 +132,18 @@
 		7B186D441AD5DEF200B39F8C /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				7BA636CF1AD971DC005D57C1 /* CategoryRowController.h */,
+				7BA636D01AD971DC005D57C1 /* CategoryRowController.m */,
+				7B186D3B1AD5DC6400B39F8C /* HomeInterfaceController.h */,
+				7B186D3C1AD5DC6400B39F8C /* HomeInterfaceController.m */,
 				7B2CC4D91AD02AFD00FF8926 /* InterfaceController.h */,
 				7B2CC4DA1AD02AFD00FF8926 /* InterfaceController.m */,
-				7B186D3B1AD5DC6400B39F8C /* PageOneInterfaceController.h */,
-				7B186D3C1AD5DC6400B39F8C /* PageOneInterfaceController.m */,
-				7B186D3E1AD5DC8700B39F8C /* PageTwoInterfaceController.h */,
-				7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */,
+				7BA636D21AD97DED005D57C1 /* PageOneInterfaceController.h */,
+				7BA636D31AD97DED005D57C1 /* PageOneInterfaceController.m */,
 				7B186D411AD5DC9A00B39F8C /* PageThreeInterfaceController.h */,
 				7B186D421AD5DC9A00B39F8C /* PageThreeInterfaceController.m */,
+				7B186D3E1AD5DC8700B39F8C /* PageTwoInterfaceController.h */,
+				7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -427,10 +437,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA636D11AD971DC005D57C1 /* CategoryRowController.m in Sources */,
 				7B186D431AD5DC9A00B39F8C /* PageThreeInterfaceController.m in Sources */,
 				7B2CC4DE1AD02AFD00FF8926 /* NotificationController.m in Sources */,
 				7B2CC4DB1AD02AFD00FF8926 /* InterfaceController.m in Sources */,
-				7B186D3D1AD5DC6400B39F8C /* PageOneInterfaceController.m in Sources */,
+				7B186D3D1AD5DC6400B39F8C /* HomeInterfaceController.m in Sources */,
+				7BA636D41AD97DED005D57C1 /* PageOneInterfaceController.m in Sources */,
 				7B186D401AD5DC8700B39F8C /* PageTwoInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

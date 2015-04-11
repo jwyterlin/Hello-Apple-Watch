@@ -1,5 +1,5 @@
 //
-//  PageOneInterfaceController.h
+//  CategoryRowController.h
 //  helloAppleWatch
 //
 //  Created by Jhonathan Wyterlin on 11/04/15.
@@ -7,8 +7,9 @@
 //
 
 #import <WatchKit/WatchKit.h>
-#import <Foundation/Foundation.h>
 
-@interface PageOneInterfaceController : WKInterfaceController
+@interface CategoryRowController : NSObject
+
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *categoryRowLabel;
 
 @end
