@@ -40,10 +40,15 @@
 
 -(void)loadTableData {
     
-    self.categories = @[ @{@"name":@"Pizza",@"image":[UIImage imageNamed:@"pizza.png"]},
-                         @{@"name":@"Hamburger",@"image":[UIImage imageNamed:@"hamburger.png"]},
-                         @{@"name":@"Hot Dog",@"image":[UIImage imageNamed:@"hot_dog.png"]},
-                         @{@"name":@"Drinks",@"image":[UIImage imageNamed:@"drink.png"]}
+    NSDictionary *pizza = [[NSDictionary alloc] initWithObjectsAndKeys:@"Pizza",@"name",[UIImage imageNamed:@"pizza.png"],@"image",nil];
+    NSDictionary *hamburger = [[NSDictionary alloc] initWithObjectsAndKeys:@"Hamburger",@"name",[UIImage imageNamed:@"hamburger.png"],@"image", nil];
+    NSDictionary *hotDog = [[NSDictionary alloc] initWithObjectsAndKeys:@"Hot Dog",@"name",[UIImage imageNamed:@"hot_dog.png"], @"image", nil];
+    NSDictionary *drinks = [[NSDictionary alloc] initWithObjectsAndKeys:@"Drinks",@"name",[UIImage imageNamed:@"drink.png"], @"image", nil];
+    
+    self.categories = @[ pizza,
+                         hamburger,
+                         hotDog,
+                         drinks
                         ];
     
     [self.table setNumberOfRows:self.categories.count withRowType:@"category"];
