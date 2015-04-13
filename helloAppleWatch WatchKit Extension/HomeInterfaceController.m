@@ -23,7 +23,7 @@
     [super awakeWithContext:context];
     
     // Configure interface objects here.
-    [self setTitle:@"Names #01"];
+    [self setTitle:@"Food"];
     [self loadTableData];
     
 }
