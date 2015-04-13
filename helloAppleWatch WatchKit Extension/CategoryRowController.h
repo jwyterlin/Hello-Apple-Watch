@@ -11,5 +11,6 @@
 @interface CategoryRowController : NSObject
 
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *categoryRowLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *categoryRowImage;
 
 @end

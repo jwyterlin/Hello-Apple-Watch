@@ -12,7 +12,7 @@
 @interface HomeInterfaceController ()
 
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *table;
-@property (strong, nonatomic) NSArray *categoryNames;
+@property (strong, nonatomic) NSArray *categories;
 
 @end
 
@@ -40,15 +40,23 @@
 
 -(void)loadTableData {
     
-    self.categoryNames = @[@"Pizza", @"Hamburguer", @"Hot Dog", @"Drinks"];
+    self.categories = @[ @{@"name":@"Pizza",@"image":[UIImage imageNamed:@"pizza.png"]},
+                         @{@"name":@"Hamburger",@"image":[UIImage imageNamed:@"hamburger.png"]},
+                         @{@"name":@"Hot Dog",@"image":[UIImage imageNamed:@"hot_dog.png"]},
+                         @{@"name":@"Drinks",@"image":[UIImage imageNamed:@"drink.png"]}
+                        ];
     
-    [self.table setNumberOfRows:self.categoryNames.count withRowType:@"category"];
+    [self.table setNumberOfRows:self.categories.count withRowType:@"category"];
     
-    [self.categoryNames enumerateObjectsUsingBlock:^(NSString *categoryName, NSUInteger idx, BOOL *stop) {
+    [self.categories enumerateObjectsUsingBlock:^(NSDictionary *category, NSUInteger idx, BOOL *stop) {
     
         CategoryRowController *row = [self.table rowControllerAtIndex:idx];
         
+        NSString *categoryName = category[@"name"];
+        UIImage *categoryImage = category[@"image"];
+        
         [row.categoryRowLabel setText:categoryName];
+        [row.categoryRowImage setImage:categoryImage];
         
     }];
     
@@ -56,7 +64,7 @@
 
 -(void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
     
-    NSLog( @"category selected: %@", self.categoryNames[rowIndex] );
+    NSLog( @"category selected: %@", self.categories[rowIndex] );
     
 }
 
