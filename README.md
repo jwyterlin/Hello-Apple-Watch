@@ -9,6 +9,8 @@ An application for Apple Watch using Glance and Notifications
 
 - Returning to XCode, select the target 'helloAppleWatch WatchKit App' and compile
 
+## Screenshot
+
 Follow a screenshot of the app in the watch
 
 ![alt tag](https://raw.github.com/jwyterlin/Hello-Apple-Watch/master/Screenshot/screenshot.png)
