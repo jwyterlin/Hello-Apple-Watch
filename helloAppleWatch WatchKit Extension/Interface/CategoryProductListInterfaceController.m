@@ -6,20 +6,20 @@
 //  Copyright (c) 2015 Jhonathan Wyterlin. All rights reserved.
 //
 
-#import "HomeInterfaceController.h"
+#import "CategoryProductListInterfaceController.h"
 #import "CategoryRowController.h"
 
 // Model
 #import "ProductCategory.h"
 
-@interface HomeInterfaceController ()
+@interface CategoryProductListInterfaceController ()
 
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *table;
 @property (strong, nonatomic) NSArray *categories;
 
 @end
 
-@implementation HomeInterfaceController
+@implementation CategoryProductListInterfaceController
 
 -(void)awakeWithContext:(id)context {
  
@@ -45,7 +45,7 @@
     
     [self loadCategoriesList];
     
-    [self.table setNumberOfRows:self.categories.count withRowType:@"category"];
+    [self.table setNumberOfRows:self.categories.count withRowType:@"categoryRow"];
     
     [self.categories enumerateObjectsUsingBlock:^(ProductCategory *category, NSUInteger idx, BOOL *stop) {
     

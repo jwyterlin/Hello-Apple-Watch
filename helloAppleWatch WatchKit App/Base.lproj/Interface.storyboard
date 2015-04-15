@@ -53,15 +53,15 @@
             </objects>
             <point key="canvasLocation" x="286" y="896"/>
         </scene>
-        <!--home-->
+        <!--categoryProductList-->
         <scene sceneID="fDO-77-CcL">
             <objects>
-                <controller identifier="home" id="n4w-O2-lMA" customClass="HomeInterfaceController">
+                <controller identifier="categoryProductList" id="n4w-O2-lMA" customClass="CategoryProductListInterfaceController">
                     <items>
                         <label alignment="left" text="Categories" id="3lV-at-o9Z"/>
                         <table alignment="left" id="dvz-EG-kPv">
                             <items>
-                                <tableRow identifier="category" id="glf-t9-Ljo" customClass="CategoryRowController">
+                                <tableRow identifier="categoryRow" id="glf-t9-Ljo" customClass="CategoryRowController">
                                     <group key="rootItem" width="1" alignment="left" id="TcK-6x-9BK">
                                         <items>
                                             <imageView width="36" height="1" alignment="left" id="Dd0-lP-gOq"/>
