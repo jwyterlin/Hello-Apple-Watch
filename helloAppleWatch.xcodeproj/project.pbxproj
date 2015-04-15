@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BD2C64D1ADE9F04006A7653 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */; };
 		7B186D3D1AD5DC6400B39F8C /* HomeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3C1AD5DC6400B39F8C /* HomeInterfaceController.m */; };
 		7B186D401AD5DC8700B39F8C /* PageTwoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D3F1AD5DC8700B39F8C /* PageTwoInterfaceController.m */; };
 		7B186D431AD5DC9A00B39F8C /* PageThreeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B186D421AD5DC9A00B39F8C /* PageThreeInterfaceController.m */; };
@@ -67,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5BD2C64B1ADE9F04006A7653 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCategory.h; path = Model/ProductCategory.h; sourceTree = "<group>"; };
+		5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCategory.m; path = Model/ProductCategory.m; sourceTree = "<group>"; };
 		7B186D3B1AD5DC6400B39F8C /* HomeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInterfaceController.h; sourceTree = "<group>"; };
 		7B186D3C1AD5DC6400B39F8C /* HomeInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInterfaceController.m; sourceTree = "<group>"; };
 		7B186D3E1AD5DC8700B39F8C /* PageTwoInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoInterfaceController.h; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BD2C64A1ADE9EAC006A7653 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BD2C64B1ADE9F04006A7653 /* ProductCategory.h */,
+				5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		7B186D441AD5DEF200B39F8C /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +235,7 @@
 		7B2CC4D51AD02AFD00FF8926 /* helloAppleWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5BD2C64A1ADE9EAC006A7653 /* Model */,
 				7B186D451AD5DF1A00B39F8C /* Notification */,
 				7B186D441AD5DEF200B39F8C /* Interface */,
 				7B2CC4DF1AD02AFD00FF8926 /* Images.xcassets */,
@@ -440,6 +453,7 @@
 				7BA636D11AD971DC005D57C1 /* CategoryRowController.m in Sources */,
 				7B186D431AD5DC9A00B39F8C /* PageThreeInterfaceController.m in Sources */,
 				7B2CC4DE1AD02AFD00FF8926 /* NotificationController.m in Sources */,
+				5BD2C64D1ADE9F04006A7653 /* ProductCategory.m in Sources */,
 				7B2CC4DB1AD02AFD00FF8926 /* InterfaceController.m in Sources */,
 				7B186D3D1AD5DC6400B39F8C /* HomeInterfaceController.m in Sources */,
 				7BA636D41AD97DED005D57C1 /* PageOneInterfaceController.m in Sources */,

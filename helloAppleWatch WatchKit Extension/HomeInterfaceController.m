@@ -9,6 +9,9 @@
 #import "HomeInterfaceController.h"
 #import "CategoryRowController.h"
 
+// Model
+#import "ProductCategory.h"
+
 @interface HomeInterfaceController ()
 
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *table;
@@ -40,30 +43,44 @@
 
 -(void)loadTableData {
     
-    NSDictionary *pizza = [[NSDictionary alloc] initWithObjectsAndKeys:@"Pizza",@"name",[UIImage imageNamed:@"pizza.png"],@"image",nil];
-    NSDictionary *hamburger = [[NSDictionary alloc] initWithObjectsAndKeys:@"Hamburger",@"name",[UIImage imageNamed:@"hamburger.png"],@"image", nil];
-    NSDictionary *hotDog = [[NSDictionary alloc] initWithObjectsAndKeys:@"Hot Dog",@"name",[UIImage imageNamed:@"hot_dog.png"], @"image", nil];
-    NSDictionary *drinks = [[NSDictionary alloc] initWithObjectsAndKeys:@"Drinks",@"name",[UIImage imageNamed:@"drink.png"], @"image", nil];
+    [self loadCategoriesList];
+    
+    [self.table setNumberOfRows:self.categories.count withRowType:@"category"];
+    
+    [self.categories enumerateObjectsUsingBlock:^(ProductCategory *category, NSUInteger idx, BOOL *stop) {
+    
+        CategoryRowController *row = [self.table rowControllerAtIndex:idx];
+        
+        [row.categoryRowLabel setText:category.name];
+        [row.categoryRowImage setImage:category.image];
+        
+    }];
+    
+}
+
+-(void)loadCategoriesList {
+    
+    ProductCategory *pizza = [ProductCategory new];
+    pizza.name = @"Pizza";
+    pizza.image = [UIImage imageNamed:@"pizza.png"];
+    
+    ProductCategory *hamburger = [ProductCategory new];
+    hamburger.name = @"Hamburger";
+    hamburger.image = [UIImage imageNamed:@"hamburger.png"];
+    
+    ProductCategory *hotDog = [ProductCategory new];
+    hotDog.name = @"Hot Dog";
+    hotDog.image = [UIImage imageNamed:@"hot_dog.png"];
+    
+    ProductCategory *drinks = [ProductCategory new];
+    drinks.name = @"Drinks";
+    drinks.image = [UIImage imageNamed:@"drink.png"];
     
     self.categories = @[ pizza,
                          hamburger,
                          hotDog,
                          drinks
-                        ];
-    
-    [self.table setNumberOfRows:self.categories.count withRowType:@"category"];
-    
-    [self.categories enumerateObjectsUsingBlock:^(NSDictionary *category, NSUInteger idx, BOOL *stop) {
-    
-        CategoryRowController *row = [self.table rowControllerAtIndex:idx];
-        
-        NSString *categoryName = category[@"name"];
-        UIImage *categoryImage = category[@"image"];
-        
-        [row.categoryRowLabel setText:categoryName];
-        [row.categoryRowImage setImage:categoryImage];
-        
-    }];
+                         ];
     
 }
 
