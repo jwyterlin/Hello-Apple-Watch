@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B39727E1ADFE36E0071F0F5 /* ProductListInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B39727D1ADFE36E0071F0F5 /* ProductListInterfaceController.m */; };
+		5B3972811ADFF2A60071F0F5 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3972801ADFF2A60071F0F5 /* Product.m */; };
 		5BD2C64D1ADE9F04006A7653 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */; };
 		5BD2C6581ADEA242006A7653 /* CategoryProductListInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2C64F1ADEA242006A7653 /* CategoryProductListInterfaceController.m */; };
 		5BD2C6591ADEA242006A7653 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2C6511ADEA242006A7653 /* InterfaceController.m */; };
@@ -71,6 +72,8 @@
 /* Begin PBXFileReference section */
 		5B39727C1ADFE36E0071F0F5 /* ProductListInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListInterfaceController.h; path = Interface/ProductListInterfaceController.h; sourceTree = "<group>"; };
 		5B39727D1ADFE36E0071F0F5 /* ProductListInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListInterfaceController.m; path = Interface/ProductListInterfaceController.m; sourceTree = "<group>"; };
+		5B39727F1ADFF2A60071F0F5 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = Model/Product.h; sourceTree = "<group>"; };
+		5B3972801ADFF2A60071F0F5 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = Model/Product.m; sourceTree = "<group>"; };
 		5BD2C64B1ADE9F04006A7653 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCategory.h; path = Model/ProductCategory.h; sourceTree = "<group>"; };
 		5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCategory.m; path = Model/ProductCategory.m; sourceTree = "<group>"; };
 		5BD2C64E1ADEA242006A7653 /* CategoryProductListInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryProductListInterfaceController.h; path = Interface/CategoryProductListInterfaceController.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 			children = (
 				5BD2C64B1ADE9F04006A7653 /* ProductCategory.h */,
 				5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */,
+				5B39727F1ADFF2A60071F0F5 /* Product.h */,
+				5B3972801ADFF2A60071F0F5 /* Product.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD2C65B1ADEA242006A7653 /* PageThreeInterfaceController.m in Sources */,
+				5B3972811ADFF2A60071F0F5 /* Product.m in Sources */,
 				5BD2C6591ADEA242006A7653 /* InterfaceController.m in Sources */,
 				5BD2C65A1ADEA242006A7653 /* PageOneInterfaceController.m in Sources */,
 				5BD2C65C1ADEA242006A7653 /* PageTwoInterfaceController.m in Sources */,

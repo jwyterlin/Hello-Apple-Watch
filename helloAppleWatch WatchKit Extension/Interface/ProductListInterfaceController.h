@@ -11,6 +11,7 @@
 
 @interface ProductListInterfaceController : WKInterfaceController
 
+@property(nonatomic,strong) IBOutlet WKInterfaceLabel *label;
 @property(nonatomic,strong) IBOutlet WKInterfaceImage *image;
 
 @end

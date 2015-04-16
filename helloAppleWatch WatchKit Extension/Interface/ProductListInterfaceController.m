@@ -9,7 +9,7 @@
 #import "ProductListInterfaceController.h"
 
 // Model
-#import "ProductCategory.h"
+#import "Product.h"
 
 @interface ProductListInterfaceController ()
 
@@ -22,8 +22,9 @@
     [super awakeWithContext:context];
 
     // Configure interface objects here.
-    ProductCategory *productCategory = (ProductCategory *)context;
-    [self.image setImage:productCategory.image];
+    Product *product = (Product *)context;
+    [self.label setText:product.name];
+    [self.image setImage:product.image];
 
 }
 

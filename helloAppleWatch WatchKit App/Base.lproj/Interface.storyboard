@@ -116,10 +116,12 @@
             <objects>
                 <controller identifier="productList" id="wov-Db-AVr" customClass="ProductListInterfaceController">
                     <items>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="BYj-OG-1Tb"/>
                         <imageView width="1" height="100" alignment="left" id="9wd-Gv-V6p"/>
                     </items>
                     <connections>
                         <outlet property="image" destination="9wd-Gv-V6p" id="amZ-Hm-Ljg"/>
+                        <outlet property="label" destination="BYj-OG-1Tb" id="WvC-rh-iPP"/>
                     </connections>
                 </controller>
             </objects>
