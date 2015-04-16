@@ -1,5 +1,5 @@
 # Hello Apple Watch
-An application for Apple Watch using Glance and Notifications 
+An application for Apple Watch using Glance and Notifications
 
 ## To run the WatchKit App
 
@@ -14,3 +14,4 @@ An application for Apple Watch using Glance and Notifications
 Follow a screenshot of the app in the watch
 
 ![alt tag](https://raw.github.com/jwyterlin/Hello-Apple-Watch/master/Screenshot/screenshot.png)
+![alt tag](https://raw.github.com/jwyterlin/Hello-Apple-Watch/master/Screenshot/screenshot-02.png)
