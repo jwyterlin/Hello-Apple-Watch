@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Jhonathan Wyterlin. All rights reserved.
 //
 
-#import "CategoryRowController.h"
+#import "CategoryProductRowController.h"
 
-@implementation CategoryRowController
+@implementation CategoryProductRowController
 
 @end

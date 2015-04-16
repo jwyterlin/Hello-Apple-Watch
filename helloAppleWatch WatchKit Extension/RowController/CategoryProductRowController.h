@@ -8,7 +8,7 @@
 
 #import <WatchKit/WatchKit.h>
 
-@interface CategoryRowController : NSObject
+@interface CategoryProductRowController : NSObject
 
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *categoryRowLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *categoryRowImage;

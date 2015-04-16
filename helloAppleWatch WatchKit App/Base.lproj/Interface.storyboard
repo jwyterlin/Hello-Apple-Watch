@@ -61,7 +61,7 @@
                         <label alignment="left" text="Categories" id="3lV-at-o9Z"/>
                         <table alignment="left" id="dvz-EG-kPv">
                             <items>
-                                <tableRow identifier="categoryRow" id="glf-t9-Ljo" customClass="CategoryRowController">
+                                <tableRow identifier="categoryRow" id="glf-t9-Ljo" customClass="CategoryProductRowController">
                                     <group key="rootItem" width="1" alignment="left" id="TcK-6x-9BK">
                                         <items>
                                             <imageView width="36" height="1" alignment="left" id="Dd0-lP-gOq"/>
@@ -110,6 +110,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="510" y="896"/>
+        </scene>
+        <!--productList-->
+        <scene sceneID="Zaa-mv-vkX">
+            <objects>
+                <controller identifier="productList" id="wov-Db-AVr" customClass="ProductListInterfaceController">
+                    <items>
+                        <imageView width="1" height="100" alignment="left" id="9wd-Gv-V6p"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="9wd-Gv-V6p" id="amZ-Hm-Ljg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="499" y="1187"/>
         </scene>
         <!--PageThree-->
         <scene sceneID="uZA-tR-OQ7">

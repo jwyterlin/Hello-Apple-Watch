@@ -7,7 +7,7 @@
 //
 
 #import "CategoryProductListInterfaceController.h"
-#import "CategoryRowController.h"
+#import "CategoryProductRowController.h"
 
 // Model
 #import "ProductCategory.h"
@@ -49,7 +49,7 @@
     
     [self.categories enumerateObjectsUsingBlock:^(ProductCategory *category, NSUInteger idx, BOOL *stop) {
     
-        CategoryRowController *row = [self.table rowControllerAtIndex:idx];
+        CategoryProductRowController *row = [self.table rowControllerAtIndex:idx];
         
         [row.categoryRowLabel setText:category.name];
         [row.categoryRowImage setImage:category.image];
@@ -87,6 +87,13 @@
 -(void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
     
     NSLog( @"category selected: %@", self.categories[rowIndex] );
+    
+    ProductCategory *productCategory = self.categories[rowIndex];
+    
+    NSArray *controllerNames = @[@"productList", @"productList", @"productList", @"productList", @"productList"];
+    NSArray *contexts = @[productCategory, productCategory, productCategory, productCategory, productCategory];
+    
+    [self presentControllerWithNames:controllerNames contexts:contexts];
     
 }
 
