@@ -13,5 +13,6 @@
 
 @property(nonatomic,strong) IBOutlet WKInterfaceLabel *label;
 @property(nonatomic,strong) IBOutlet WKInterfaceImage *image;
+@property(nonatomic,strong) IBOutlet WKInterfaceButton *addToCartButton;
 
 @end
