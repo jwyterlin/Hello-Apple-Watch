@@ -1,5 +1,5 @@
 # Hello Apple Watch
-An application for Apple Watch using Glance and Notifications
+An application for Apple Watch listing foods like a delivery service to example its funcionalities.
 
 ## To run the WatchKit App
 
