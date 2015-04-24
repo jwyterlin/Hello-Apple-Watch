@@ -29,6 +29,7 @@
 		7B2CC4EC1AD02AFD00FF8926 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CC4EA1AD02AFD00FF8926 /* Interface.storyboard */; };
 		7B2CC4EE1AD02AFD00FF8926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CC4ED1AD02AFD00FF8926 /* Images.xcassets */; };
 		7B2CC4F11AD02AFD00FF8926 /* helloAppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B2CC4D41AD02AFD00FF8926 /* helloAppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7BB929C61AE9E660004F8190 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB929C51AE9E660004F8190 /* Cart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		7B2CC4E91AD02AFD00FF8926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B2CC4EB1AD02AFD00FF8926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7B2CC4ED1AD02AFD00FF8926 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BB929C41AE9E660004F8190 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cart.h; path = Model/Cart.h; sourceTree = "<group>"; };
+		7BB929C51AE9E660004F8190 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cart.m; path = Model/Cart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				5BD2C64C1ADE9F04006A7653 /* ProductCategory.m */,
 				5B39727F1ADFF2A60071F0F5 /* Product.h */,
 				5B3972801ADFF2A60071F0F5 /* Product.m */,
+				7BB929C41AE9E660004F8190 /* Cart.h */,
+				7BB929C51AE9E660004F8190 /* Cart.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				5BD2C65A1ADEA242006A7653 /* PageOneInterfaceController.m in Sources */,
 				5BD2C65C1ADEA242006A7653 /* PageTwoInterfaceController.m in Sources */,
 				5BD2C6631ADEA2CD006A7653 /* NotificationController.m in Sources */,
+				7BB929C61AE9E660004F8190 /* Cart.m in Sources */,
 				5BD2C6601ADEA29F006A7653 /* CategoryProductRowController.m in Sources */,
 				5B39727E1ADFE36E0071F0F5 /* ProductListInterfaceController.m in Sources */,
 				5BD2C6581ADEA242006A7653 /* CategoryProductListInterfaceController.m in Sources */,
