@@ -10,4 +10,6 @@
 
 @interface Cart : NSObject
 
++(Cart *)singletonInstance;
+
 @end

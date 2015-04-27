@@ -10,4 +10,15 @@
 
 @implementation Cart
 
+static Cart *singleton = nil;
+
++(Cart *)singletonInstance {
+    
+    if ( singleton == nil )
+        singleton = [Cart new];
+    
+    return singleton;
+    
+}
+
 @end
