@@ -13,6 +13,8 @@
 
 @interface ProductListInterfaceController ()
 
+@property(nonatomic,strong) Product *product;
+
 @end
 
 @implementation ProductListInterfaceController
@@ -25,6 +27,8 @@
     Product *product = (Product *)context;
     [self.label setText:product.name];
     [self.image setImage:product.image];
+    
+    self.product = product;
 
 }
 
@@ -45,6 +49,37 @@
 }
 
 -(IBAction)addToCart:(id)sender {
+    
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:self.product.name,@"product", nil];
+    
+    [WKInterfaceController openParentApplication:dictionary reply:^(NSDictionary *replyInfo, NSError *error) {
+       
+        if ( replyInfo ) {
+            
+            if ( replyInfo[@"Some data"] ) {
+                
+                NSString *stringResult = replyInfo[@"Some data"];
+                
+                NSLog(@"stringResult: %@", stringResult);
+                
+                return;
+                
+            } else {
+                
+                NSLog(@"No Some data");
+                
+            }
+            
+        }
+            
+        if ( error ) {
+            NSLog(@"Error occurred: %@", error);
+        } else {
+            NSLog(@"No error, but no data either");
+        }
+        
+    }];
+    
 }
 
 @end

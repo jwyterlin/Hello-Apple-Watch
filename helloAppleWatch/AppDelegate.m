@@ -42,4 +42,32 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application
+handleWatchKitExtensionRequest:(NSDictionary *)userInfo
+              reply:(void(^)(NSDictionary *replyInfo))reply {
+    
+    if ( userInfo ) {
+        
+        if ( userInfo[@"product"] ) {
+            
+            NSString *productName = userInfo[@"product"];
+
+            NSString *msg;
+            
+            if ( [productName isEqualToString:@"Marguerita"] )
+                msg = @"My favorite";
+            else
+                msg = @"Bad choice";
+
+            NSDictionary *dictionaryToReturn = [[NSDictionary alloc] initWithObjectsAndKeys:msg,@"Some data", nil];
+            
+            if (reply)
+                reply(dictionaryToReturn);
+
+        }
+        
+    }
+    
+}
+
 @end
